@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-14 01:25:58 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLU1KN0Y2VDI7MjAyNS0wMi0xNDsxMjo1NDoxNiBQTTszMzE4"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLU1KN0Y2VDI7MjAyNS0wMi0xNDswMToyNTo1OCBQTTsxOzM0Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Integer" array="False" size=""/>
+            <declare name="unitprice" type="Real" array="False" size=""/>
+            <declare name="extendedprice" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;input quantity&quot;" newline="True"/>
+            <input variable="quantity"/>
+            <if expression="quantity &gt;= 1000">
+                <then>
+                    <assign variable="unitprice" expression="3.00"/>
+                </then>
+                <else>
+                    <assign variable="unitprice" expression="5.00"/>
+                </else>
+            </if>
+            <assign variable="extendedprice" expression="quantity * unitprice"/>
+            <assign variable="tax" expression="extendedprice * 0.07"/>
+            <assign variable="total" expression="extendedprice * tax"/>
+            <output expression="&quot;quantity is&quot;" newline="True"/>
+            <output expression="quantity" newline="True"/>
+            <output expression="&quot;unit price is&quot;" newline="True"/>
+            <output expression="unitprice" newline="True"/>
+            <output expression="&quot;extended price is&quot;" newline="True"/>
+            <output expression="extendedprice" newline="True"/>
+            <output expression="&quot;tax is&quot;" newline="True"/>
+            <output expression="tax" newline="True"/>
+            <output expression="&quot;total is&quot;" newline="True"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
