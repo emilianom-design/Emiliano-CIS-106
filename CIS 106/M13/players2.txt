@@ -1,0 +1,3 @@
+Smith 0.300
+Johnson 0.275
+Garcia 0.320
